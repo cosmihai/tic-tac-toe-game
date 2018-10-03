@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  text-align: center;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(35, 35, 35)
+}
+
+.wrapper {
+  max-width: 243px;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.board {
+  transition: opacity .5s ease-out;
+}
+
+.row {
+  display:flex;
+  margin-bottom: 1px;
+}
+
+.col {
+  height: 80px;
+  width: 80px;
+  font-size: 48px;
+  line-height: 80px;
+  background-color: aliceblue;
+  margin-right: 1px;
+}
+
+.btn {
+  background-color: aliceblue;
+  border: none;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.btn--t-margin {
+  margin-top: 24px;
+}
+
+.btn--b-margin {
+  margin-bottom: 24px;
+}
+
+.result {
+  position: absolute;
+  top: 47.5vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: 800;
+  text-shadow: white 1px 1px 1px;
+}
+
+
