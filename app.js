@@ -18,31 +18,7 @@ restartButton.addEventListener('click', reseatBoard);
 
 
 function play() {
-  // // with human opponent
-  // if(humanOpponent) {
-  //   for (let ix=0; ix<cols.length; ix++) {
-  //     cols[ix].addEventListener('click', () => {
-  //       if(!cols[ix].innerHTML){
-  //         if(playerTurn && !gameOver) {
-  //           cols[ix].innerHTML = playerMarker;
-  //           let i = cols[ix].getAttribute('data-i');
-  //           let j = cols[ix].getAttribute('data-j');
-  //           grid[i][j] = playerMarker
-  //         }else if(!playerTurn && !gameOver){
-  //           cols[ix].innerHTML = computerMarker;
-  //           let i = cols[ix].getAttribute('data-i');
-  //           let j = cols[ix].getAttribute('data-j');
-  //           grid[i][j] = computerMarker
-  //         }
-  //         count++
-  //         playerTurn = !playerTurn;
-  //         checkResult();
-  //       }
-  //     })
-  //   }
-  // }else {
-  //   // against AI
-  // }
+
   for (let ix=0; ix<cols.length; ix++) {
     cols[ix].addEventListener('click', () => {
       if(!cols[ix].innerHTML && !gameOver && playerTurn){
@@ -66,17 +42,6 @@ function play() {
 
 
 function moveAI() {
-  // let gameState = [];
-
-  // for(let i=0; i<3; i++) {
-  //   for(let j=0; j<3; j++) {
-  //     if(grid[i][j]=='X'){
-  //       gameState.push(3*i+j)
-  //     }
-  //   }
-  // }
-  // console.log(gameState);
-  // playerTurn = !playerTurn
   let emptyCells = []
   for(let ix=0; ix<cols.length; ix++){
     if(cols[ix].innerHTML == '') {
